@@ -1,0 +1,12 @@
+@use 'library' as *;
+@use 'override' as *;
+
+
+body{
+    background-color: $color;
+}
+// The error says that it does not know "color", 
+// so it means that the overwrite is not the origin of the variable
+body{
+    color: white;
+}
